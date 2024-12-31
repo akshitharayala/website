@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <title>Departments</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .links {
+            overflow: hidden;
+            background-color: rgb(228, 218, 218);
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+        }
+        .links a {
+            padding: 14px 16px;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            background-color: grey;
+            color: white;
+        }
+        h2 {
+            text-align: center;
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: rgb(158, 16, 214);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            background-color: rgb(122, 12, 168);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 768px) {
+            .cards-container {
+                justify-content: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            position: sticky;
+            bottom: 0;
+            background-color: grey;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <center><h1>Prasad V Potluri Siddhartha Institute of Technology</h1></center>
+    <div class="links">
+        <a href="home.html">Home</a>
+        <a href="departments.html">Departments</a>
+        <a href="academics.html">Academics</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <img src="cse.jpg" alt="CSE Image">
+            <h3>Computer Science Engineering</h3>
+            <p>Focus on core computer science topics, including programming, data structures, and algorithms.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="aiml.jpg" alt="AI & ML Image">
+            <h3>Computer Science Engineering (AI & ML)</h3>
+            <p>Specialize in Artificial Intelligence and Machine Learning, preparing students for cutting-edge technology roles.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="csd.jpg" alt="DS Image">
+            <h3>Computer Science Engineering (DS)</h3>
+            <p>Data Science program with a focus on statistical modeling, data visualization, and machine learning techniques.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="it.jpg" alt="IT Image">
+            <h3>Information Technology</h3>
+            <p>Explore software development, networking, and cybersecurity in the field of Information Technology.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="ece.jpg" alt="ECE Image">
+            <h3>Electrical & Communication Engineering</h3>
+            <p>Learn the fundamentals of electrical circuits, communication systems, and signal processing technologies.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="eee.jpg" alt="EEE Image">
+            <h3>Electrical & Electronics Engineering</h3>
+            <p>Gain expertise in electronics, circuit design, and power systems for various industrial applications.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="me.jpg" alt="ME Image">
+            <h3>Mechanical Engineering</h3>
+            <p>Study the design, production, and operation of machinery and mechanical systems in a wide range of industries.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Prasad V Potluri Siddhartha Institute of Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>

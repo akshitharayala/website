@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <title>HomePage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .links {
+            overflow: hidden;
+            background-color: rgb(228, 218, 218);
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+        }
+        .links a {
+            padding: 14px 16px;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            background-color: grey;
+            color: white;
+        }
+        .images {
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .images img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+        }
+        footer {
+            position: sticky;
+            bottom: 0;
+            background-color: grey;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            .links a {
+                padding: 10px 14px;
+                font-size: 14px;
+            }
+            .images {
+                flex-direction: column; 
+                align-items: center;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <center><h1>Prasad V Potluri Siddhartha Institute of Technology</h1></center>
+        <div class="links">
+            <a href="home.html">Home</a>
+            <a href="departments.html">Departments</a>
+            <a href="academics.html">Academics</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <center><img src="logo.jpg" alt="Pvpsit logo" width="200" height="200"></center>               
+        <center><h1>Our Campus</h1></center>
+        <div class="images">
+            <img src="campus1.jpg" alt="Buddha Statue" width="450" height="400">
+            <img src="campus2.jpg" alt="Side way" width="400" height="400">
+            <img src="campus3.jpg" alt="Outside" width="450" height="400">
+        </div>
+    </header>
+    <footer>
+        <p>&copy; 2024 Prasad V Potluri Siddhartha Institute of Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>

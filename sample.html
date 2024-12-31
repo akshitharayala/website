@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8); 
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+        overflow: hidden; 
+    }
+
+    .videos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .videos video {
+        width: calc(33.33% - 20px);
+        margin: 0 10px;
+        border-radius: 8px;
+    }
+
+    .audio-player {
+        margin-top: 20px;
+    }
+</style>
+<title>audio and video</title>
+</head>
+<body>
+    <h2 style="color:aliceblue;"><center>Video's</center></h2>
+    
+        <div class="videos">
+            <video controls>
+                <source src="https://youtu.be/GSJPueAJnu8?si=ReQjq7Dz-O2H48-s" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="https://www.youtube.com/embed/ywT3v0pTtuU" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="https://www.youtube.com/embed/ywT3v0pTtuU" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h2 style="color:aliceblue;">Audio</h2>
+        <div class="audio-player">
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+</body>
+</html>
